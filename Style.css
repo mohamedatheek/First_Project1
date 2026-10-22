@@ -1,0 +1,274 @@
+/*Header*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+}
+.logo {
+    color:#168f83;
+    font-size: 32px;
+}
+nav {
+    display: flex;
+    gap: 25px;
+}
+nav a {
+    text-decoration: none;
+    color: #35211c;
+}
+
+/*Hero*/
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    padding: 50px;
+    gap: 30px;
+}
+.hero h1 {
+    font-size: 65px;
+    line-height: 1;
+}
+.hero h1 span {
+    color: #e86d86;
+}
+.hero-image img {
+    width: 100%;
+    border-radius: 25px;
+}
+.button-pink { color: white; background: pink; }
+
+/*Ice cream Flavoer*/
+.flavors {
+    background: white;
+    padding: 40px;
+}
+.flavor-a {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+}
+.flavor-crd {
+    text-align: center;
+}
+.flavor-crd img {
+    width: 100%;
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/*Offer & Discount*/
+.offers {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 20px;
+  margin: 30px 0;
+}
+
+.promo {
+  background: #16a99c;
+  color: white;
+  padding: 30px;
+  border-radius: 20px;
+}
+.promo h2 span{
+    color: yellow;
+}
+.promo p {
+    font-size: 12px;
+}
+.offers-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+.offers-image img {
+    width: 100%;
+    max-width: 150px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Mobile screen */
+@media (max-width: 768px) {
+    .offers-image img {
+        max-width: 200px;
+        height: 200px;
+    }
+}
+
+.discount {
+  background: white;
+  padding: 25px;
+  border-radius: 20px;
+  border: 1px solid #f0e5d9;
+}
+.discount h2 {
+    color: palevioletred;
+}
+
+
+/*Features*/
+.features {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.story {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  background: #e86d86;
+  color: white;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.story div {
+  padding: 30px;
+}
+
+.story img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.newsletter {
+    padding: 70px 20px;
+    background-color: #ffe9ed;
+}
+
+.reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    gap: 25px;
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.review-card {
+    flex: 1;
+    max-width: 300px;
+    background-color: #fff5f7;
+    padding: 25px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.review-card p:first-child {
+    color: #ffb800;
+    font-size: 22px;
+}
+
+/* Mobile screen */
+@media (max-width: 768px) {
+    .reviews-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card {
+        width: 100%;
+        box-sizing: border-box;
+    }
+}
+
+
+
+.community {
+  background: #168f83;
+  color: white;
+  padding: 30px;
+}
+
+.photo-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+.photo-grid img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 12px;
+}
+
+.newsletter {
+  padding: 30px 0;
+}
+.newsletter > img { 
+    display: grid;
+    width: 145px; 
+    height: 130px; 
+    object-fit: cover;  
+    mix-blend-mode: multiply;
+    grid-template-columns: repeat(4, 1fr);
+    border-radius: 12px; 
+}
+.sr-only { 
+    position: absolute; 
+    width: 1px; 
+    height: 1px; 
+    padding: 0; 
+    margin: -1px; 
+    overflow: hidden; 
+    clip: rect(0,0,0,0);
+    white-space: nowrap; 
+    border: 0; 
+}
+
+
+/*footer*/
+.site-footer { 
+    display: grid; 
+    grid-template-columns: 1.4fr 1fr 1.3fr 1fr; 
+    gap: 28px; padding-top: 34px; 
+    padding-bottom: 24px; 
+    border-top: 1px solid var(--line); 
+}
+.site-footer h3 {
+     font-size: .9rem; 
+     margin-top: 6px; 
+}
+.site-footer p, .site-footer a:not(.logo) {
+     font-size: .82rem; 
+     color: var(--muted); 
+}
+.site-footer > div:not(:first-child) > a { 
+    display: block; 
+    margin: 7px 0; 
+}
+.socials { 
+    display: flex; 
+    gap: 12px; 
+}
+.socials a { 
+    background: #d8eee8; 
+    color: var(--teal) !important; 
+    border-radius: 50%; width: 28px; 
+    height: 28px; 
+    display: grid; 
+    place-items: center; 
+}
+.copyright { 
+    grid-column: 1 / -1; 
+    border-top: 1px solid var(--line); 
+    padding-top: 16px; 
+    margin: 0; 
+}
+
+/*buttons*/
+.order{
+    color: #16a99c;
+    background: white;
+}
